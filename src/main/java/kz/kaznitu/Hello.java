@@ -1,9 +1,14 @@
 package kz.kaznitu;
 
+import org.joda.time.LocalDate;
+
 import javax.swing.*;
 
 public class Hello {
     public static void main(String[] args) {
-        JOptionPane.showMessageDialog(null, "Hello World!");
+        LocalDate date = new LocalDate() ;
+        String dateStr = date.toString() ;
+
+        JOptionPane.showMessageDialog(null, "Hello World! " + dateStr);
     }
 }
